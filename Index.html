@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta charset="utf-8" />
+        <title>Responsive Demo</title>
+        <link href="Contents/Site.css" rel="stylesheet" type="text/css" />
+        <script src="Scripts/jquery-1.8.1.min.js"></script>
+        <meta name="viewport" content="width=device-width" />
+    </head>
+    <body>
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title">Demo</p>
+                </div>
+            </div>
+        </header>
+        <div id="body">
+            <section class="featured">
+                <div class="content-wrapper">
+                    <hgroup class="title">
+                        <h1>Visual Studio × Microsoft Azure = <span id="hearts">&hearts;</span></h1>
+                    </hgroup>
+                </div>
+            </section>
+            <section class="content-wrapper main-content clear-fix">
+                <div class="WMM">
+                    <img src="Images/c_13a.png" alt="WebMatrix Man" title="WebMatrix Man" />
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; 2014 チャック.</p>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            $(function() {
+                $('.site-title').slideDown(700, function() {
+                    $('.content-wrapper').slideDown(700);
+                    $('footer').fadeIn(700);
+                });
+                $('.WMM').fadeIn(3500);
+            });
+        </script>
+    </body>
+</html>
